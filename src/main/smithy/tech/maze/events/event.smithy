@@ -2,9 +2,9 @@ $version: "2"
 
 namespace tech.maze.events
 
-use smithy.api#document
+use smithy.api#Document
 use smithy.api#jsonName
-use smithy.api#timestamp
+use smithy.api#Timestamp
 
 /// CloudEvents v1.0 envelope (https://cloudevents.io/).
 structure CloudEvent {
