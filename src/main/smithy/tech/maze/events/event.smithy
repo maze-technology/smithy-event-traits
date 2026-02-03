@@ -60,7 +60,7 @@ structure event {
     type: String
 
     /// CloudEvents `source` attribute (URI reference) for this event.
-    @required
+    /// Typically set by the emitter at runtime.
     source: String
 
     /// Optional CloudEvents `subject` attribute.

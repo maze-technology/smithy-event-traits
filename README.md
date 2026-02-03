@@ -21,6 +21,7 @@ This library provides:
 
 - `tech.maze.events#CloudEvent` (CloudEvents v1.0 envelope)
 - `tech.maze.events#event` trait for event payload structures
+- `source` is optional in the trait and is typically set by the emitter at runtime.
 
 Example usage:
 
@@ -33,7 +34,6 @@ use tech.maze.events#event
 
 @event(
   type: "example.notification.created",
-  source: "urn:service:notifications",
   topic: "notifications.created",
   version: "1.0.0"
 )
